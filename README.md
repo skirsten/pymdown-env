@@ -2,8 +2,12 @@
 
 *Replaces `~~~${ENV_VAR_HERE}~~~` with the content of the environment variable `ENV_VAR_HERE`*
 
+Useful for generating static sites with `mkdocs` in CI pipelines.
+
+**Disclaimer: Don't blame me if this extension leaks your secret deploy tokens etc.**
+
 ## Installation
-``` sh
+``` bash
 pip install pymdown-env
 ```
 
@@ -11,18 +15,19 @@ In `mkdocs.yml`:
 
 ``` yml
 markdown_extensions:
-    - pymdown-env
+    - pymdown_env
 ```
 
 ## Example
 before
-``` md
+``` markdown
 [Download version ~~~${VERSION}~~~](/binaries/~~~${VERSION}~~~/myapp.exe)
 ```
 
 after
-``` md
+``` markdown
 [Download version 1.0.0](/binaries/1.0.0/myapp.exe)
 ```
 
-## [License](LICENSE.md)
+## License
+[MIT](LICENSE.md)
