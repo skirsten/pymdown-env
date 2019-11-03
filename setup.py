@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pymdown-env",
-    version="1.0.0",
+    version="1.0.1",
     author="Simon Kirsten",
     author_email="simon.kirsten@stud.h-da.de",
     description="pymdown extension to inline replace environment variables",
